@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<org.lineageos.eleven.widgets.AlbumScrimImage
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lineageos.eleven.widgets.AlbumScrimImage xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/albumScrimImage"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -24,11 +22,12 @@
         android:id="@+id/albumImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:contentDescription="@null" />
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
     <LinearLayout
         android:id="@+id/albumScrim"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
 </org.lineageos.eleven.widgets.AlbumScrimImage>

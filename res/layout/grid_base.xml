@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2012 Andrew Neal
   Copyright (C) 2014 The CyanogenMod Project
   Copyright (C) 2021 The LineageOS Project
@@ -20,19 +19,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        layout="@layout/loading_empty_container" />
+    <include layout="@layout/loading_empty_container" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/grid_base"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/list_item_general_margin"
-        android:paddingRight="@dimen/list_item_general_margin"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:fadingEdge="vertical"
         android:clipToPadding="false"
+        android:fadingEdge="vertical"
+        android:paddingLeft="@dimen/list_item_general_margin"
+        android:paddingTop="4dp"
+        android:paddingRight="@dimen/list_item_general_margin"
+        android:paddingBottom="4dp"
         android:scrollbarStyle="outsideOverlay"
         android:scrollbars="vertical" />
 </FrameLayout>

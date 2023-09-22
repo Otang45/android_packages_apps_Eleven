@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2015 The CyanogenMod Project
   Copyright (C) 2021 The LineageOS Project
 
@@ -15,15 +14,14 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="156dp"
     android:layout_height="156dp"
     android:layout_margin="4dp"
-    card_view:cardElevation="4dp"
+    card_view:cardBackgroundColor="@color/cards_bg_color"
     card_view:cardCornerRadius="8dp"
-    card_view:cardBackgroundColor="@color/cards_bg_color" >
+    card_view:cardElevation="4dp">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -34,21 +32,21 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:background="@drawable/bg_grid_item"
             android:layout_height="@dimen/grid_bottom_height"
             android:layout_gravity="bottom"
+            android:background="@drawable/bg_grid_item"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/description"
                 style="@style/ListItemMainText.Grid.Single"
-                android:layout_marginStart="@dimen/grid_item_padding_left"
-                android:textColor="@color/white"
-                android:maxLines="2"
-                android:layout_marginEnd="32dp"
-                android:layout_gravity="center_vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/grid_item_padding_left"
+                android:layout_marginEnd="32dp"
+                android:maxLines="2"
+                android:textColor="@color/white" />
 
             <org.lineageos.eleven.widgets.PopupMenuButton
                 android:id="@+id/popup_menu_button"

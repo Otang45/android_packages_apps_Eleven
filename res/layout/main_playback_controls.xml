@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2019 The LineageOS Project
   Copyright (C) 2019 SHIFT GmbH
 
@@ -15,8 +14,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,8 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:gravity="center_vertical"
-        android:paddingEnd="16dp"
         android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:textColor="@color/audio_player_current_time_color"
         android:textSize="@dimen/audio_player_time_text_size"
         android:textStyle="bold"
@@ -60,8 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:gravity="center_vertical"
-        android:paddingEnd="16dp"
         android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:textColor="@color/audio_player_total_time_color"
         android:textSize="@dimen/audio_player_time_text_size"
         android:textStyle="bold"

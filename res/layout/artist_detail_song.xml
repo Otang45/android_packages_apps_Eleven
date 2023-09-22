@@ -1,17 +1,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="70dp" >
+    android:layout_height="70dp">
 
     <ImageView
         android:id="@+id/album_art"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/list_item_general_margin"
         android:layout_marginTop="@dimen/list_preferred_item_padding"
-        android:layout_marginBottom="@dimen/list_preferred_item_padding"
         android:layout_marginEnd="@dimen/list_preferred_item_padding"
-        android:layout_marginStart="@dimen/list_item_general_margin" />
+        android:layout_marginBottom="@dimen/list_preferred_item_padding"
+        android:importantForAccessibility="no" />
 
     <LinearLayout
         android:id="@+id/right_container"
@@ -19,13 +20,15 @@
         android:layout_height="fill_parent"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/list_item_general_margin"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:layout_marginEnd="@dimen/list_item_general_margin">
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/now_playing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
             android:src="@drawable/now_playing_icon"
             android:visibility="gone" />
 
@@ -42,9 +45,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
         android:layout_toStartOf="@id/right_container"
-        android:layout_toEndOf="@id/album_art"
-        android:layout_marginTop="16dp" />
+        android:layout_toEndOf="@id/album_art" />
 
     <TextView
         android:id="@+id/album"
@@ -52,14 +55,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
-        android:layout_toEndOf="@id/album_art"
+        android:layout_marginTop="-2dp"
         android:layout_toStartOf="@id/right_container"
-        android:layout_marginTop="-2dp" />
+        android:layout_toEndOf="@id/album_art" />
 
     <ImageView
         android:id="@+id/divider"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:importantForAccessibility="no"
         android:src="@drawable/inset_list_divider" />
 </RelativeLayout>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2014 The CyanogenMod Project
      Copyright (C) 2021 The LineageOS Project
 
@@ -16,15 +15,14 @@
      limitations under the License.
 -->
 
-<org.lineageos.eleven.widgets.NoResultsContainer
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<org.lineageos.eleven.widgets.NoResultsContainer xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/no_results_container"
-    android:gravity="center_horizontal"
     android:layout_width="@dimen/no_results_width"
     android:layout_height="wrap_content"
     android:layout_centerInParent="true"
     android:layout_gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:visibility="gone"
     tools:visibility="visible">
@@ -34,9 +32,9 @@
         android:layout_width="@dimen/white_note_width"
         android:layout_height="@dimen/white_note_height"
         android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
         android:paddingBottom="@dimen/white_note_padding_bottom"
         android:scaleType="centerInside"
-        android:contentDescription="@null"
         android:src="@drawable/no_results" />
 
     <LinearLayout
@@ -45,26 +43,27 @@
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingBottom="@dimen/no_results_text_padding_bottom">
+
         <TextView
             android:id="@+id/no_results_main_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
             android:maxLines="2"
+            android:text="@string/empty_generic_main"
             android:textAllCaps="true"
             android:textColor="?android:attr/textColorPrimary"
             android:textSize="@dimen/no_results_text_main"
-            android:textStyle="bold"
-            android:text="@string/empty_generic_main" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/no_results_main_highlight_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:ellipsize="end"
             android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal"
             android:maxLines="2"
             android:textColor="?android:attr/textColorPrimary"
             android:textSize="@dimen/no_results_text_main"
@@ -77,7 +76,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:text="@string/empty_generic_secondary"
         android:textColor="?android:attr/textColorPrimary"
-        android:textSize="@dimen/no_results_text_secondary"
-        android:text="@string/empty_generic_secondary" />
+        android:textSize="@dimen/no_results_text_secondary" />
 </org.lineageos.eleven.widgets.NoResultsContainer>

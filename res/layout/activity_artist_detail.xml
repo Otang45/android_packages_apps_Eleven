@@ -20,8 +20,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="8dp"
             android:layout_marginStart="@dimen/list_item_general_margin"
+            android:paddingVertical="8dp"
             android:text="@string/header_albums"
             android:textAllCaps="true"
             android:textColor="@color/artist_detail_header_albums_label_text_color"
@@ -36,8 +36,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="8dp"
             android:layout_marginStart="@dimen/list_item_general_margin"
+            android:paddingVertical="8dp"
             android:text="@string/header_all_songs"
             android:textAllCaps="true"
             android:textColor="@color/artist_detail_header_songs_label_text_color"
