@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 Andrew Neal
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2012 Andrew Neal
      Copyright (C) 2014 The CyanogenMod Project
      Copyright (C) 2020-2021 The LineageOS Project
 
@@ -15,8 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <!-- Main Material -->
     <style name="Eleven.Theme" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowContentOverlay">@null</item>
@@ -35,7 +33,7 @@
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
         <item name="android:navigationBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
     </style>
 
     <style name="ActionBarWidgetTheme" parent="@style/Theme.AppCompat.DayNight">
@@ -65,9 +63,9 @@
         <item name="android:dividerHeight">@dimen/divider_height</item>
     </style>
 
-    <style name="PopupMenu" parent="@style/Widget.AppCompat.PopupMenu"/>
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.PopupMenu" />
 
-    <style name="DropDownListView" parent="@style/Widget.AppCompat.ListView.DropDown"/>
+    <style name="DropDownListView" parent="@style/Widget.AppCompat.ListView.DropDown" />
 
     <!-- Sets up the pop up menu text color and size -->
     <style name="SmallPopupMenu" parent="@android:style/TextAppearance.Widget.PopupMenu.Small">
@@ -173,7 +171,8 @@
         <item name="android:textSize">@dimen/tab_text_size</item>
     </style>
 
-    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar" />
+
     <style name="ToolBarThemeMP" parent="@style/ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">@color/white</item>
     </style>

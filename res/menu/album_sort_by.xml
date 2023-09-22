@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2012 Andrew Neal
   Copyright (C) 2014 The CyanogenMod Project
 
@@ -15,9 +14,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:orderInCategory="200"
         android:title="@string/menu_sort_by"
@@ -25,20 +23,19 @@
         <menu>
             <item
                 android:id="@+id/menu_sort_by_az"
-                android:title="@string/sort_order_entry_az"/>
+                android:title="@string/sort_order_entry_az" />
             <item
                 android:id="@+id/menu_sort_by_za"
-                android:title="@string/sort_order_entry_za"/>
+                android:title="@string/sort_order_entry_za" />
             <item
                 android:id="@+id/menu_sort_by_year"
-                android:title="@string/sort_order_entry_year"/>
+                android:title="@string/sort_order_entry_year" />
             <item
                 android:id="@+id/menu_sort_by_artist"
-                android:title="@string/sort_order_entry_artist"/>
+                android:title="@string/sort_order_entry_artist" />
             <item
                 android:id="@+id/menu_sort_by_number_of_songs"
-                android:title="@string/sort_order_entry_number_of_songs"/>
+                android:title="@string/sort_order_entry_number_of_songs" />
         </menu>
     </item>
-
 </menu>

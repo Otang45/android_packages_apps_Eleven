@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2012-2013 Andrew Neal
      Copyright (C) 2012-2014 The CyanogenMod Project
      Copyright (C) 2017-2020 The LineageOS Project
@@ -61,7 +60,7 @@
     <string name="clear">Hapus</string>
     <string name="new_playlist_name_template">Daftar putar <xliff:g id="number">%d</xliff:g></string>
     <string name="create_playlist_prompt">Nama daftar putar</string>
-    <string name="delete_dialog_title">Hapus <xliff:g id="item" example="album">%s</xliff:g>?</string>
+    <string name="delete_dialog_title">Hapus <xliff:g example="album" id="item">%s</xliff:g>?</string>
     <string name="clear_top_tracks_title">Hapus lagu teratas?</string>
     <string name="clear_recent_title">Hapus yang terakhir diputar?</string>
     <string name="clear_last_added">Hapus yang terakhir ditambahkan?</string>
@@ -91,7 +90,7 @@
     <string name="accessibility_repeat">Ulang</string>
     <string name="accessibility_repeat_all">Ulangi semua</string>
     <string name="accessibility_repeat_one">Ulangi sekali</string>
-    <string name="set_as_ringtone">\'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\' dijadikan sebagai nada dering</string>
+    <string name="set_as_ringtone">\'<xliff:g example="Alarm Bell" id="name">%s</xliff:g>\' dijadikan sebagai nada dering</string>
     <string name="settings_storage_category">Penyimpanan</string>
     <string name="settings_delete_cache_title">Hapus cache</string>
     <string name="settings_delete_cache_summary">Hapus semua cache gambar</string>
